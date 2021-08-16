@@ -71,8 +71,11 @@ result.style.top = `${windowHeight}px`;
 button1.addEventListener('click', () => {
     if (name1.value.length > 0 & name2.value.length > 0) {
         relationship.innerHTML = flames(name1.value, name2.value);
-        result.style.transition = 'top 0.4s ease-in-out';
+        result.style.transition = 'top 0.5s';
         result.style.top = '0';
+        setTimeout(() => {
+            result.style.opacity = '1';
+        }, 500);
     } else {
         alert('Please enter the name');
     }
@@ -84,6 +87,7 @@ button2.addEventListener('click', () => {
 });
 
 button3.addEventListener('click', () => {
+    result.style.opacity = '0.2';
     result.style.top = `${windowHeight}px`;
 });
 
