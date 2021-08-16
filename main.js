@@ -65,8 +65,7 @@ let name1 = document.getElementById('name1');
 let name2 = document.getElementById('name2');
 let relationship = document.getElementById('relationship');
 
-let windowHeight = window.innerHeight;
-let windowWidth = window.innerWidth;
+let windowHeight = window.innerHeight + 300;
 result.style.top = `${windowHeight}px`;
 
 button1.addEventListener('click', () => {
