@@ -13,11 +13,11 @@ function flames(n1, n2) {
     for (let letter of nam1) {
         if (nam2.includes(letter)) {
             nam1.splice(nam1.indexOf(letter), 1, 1);
-            nam2.splice(nam2.indexOf(letter), 1, 1);
+            nam2.splice(nam2.indexOf(letter), 1);
         }
     }
 
-    value = nam1.filter(x => typeof x === 'string').length + nam2.filter(x => typeof x === 'string').length;
+    value = nam1.filter(x => typeof x === 'string').length + nam2.length;
 
     console.log(value);
 
